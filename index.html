@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<script src="app.js"></script>
+    	<script src="articles-model.js"></script>
+	    <script src="articles-view.js"></script>
+	    <script src="articles-controller.js"></script>
+	    <script src="observer.js"></script>
+      <script src="article.js"></script>
+      <script src="articles-standard-formatter.js"></script>
+      <script src="articles-backward-formatter.js"></script>
+      <script src="standard-formatter-factory.js"></script>
+      <script src="backward-formatter-factory.js"></script>
+	    <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+   		<header>
+   			<h1>NEWS FEED</h1>
+        	<h1>Powered by <a href="http://www.newsapi.org">NewsAPI.org</a></h1>
+        </header>
+        <div id="feed"></div>
+        <div class="add-article-container">
+          <div><p>Add your own article:</p></div>
+          <div><div class="label">Title: </div><div class="field"><input id="articleTitle" type="text" name="Title" value=""></div></div>
+          <div><div class="label">Description: </div><div class="field"><input id="articleDescription" type="text" name="Description" value=""></div></div>
+          <div><div class="label">Author: </div><div class="field"><input id="articleAuthor" type="text" name="Author" value=""></div></div>
+          <div><div class="label">Link for the image: </div><div class="field"><input id="articleImageUrl" type="text" name="ImageUrl" value=""></div></div>
+        </div>
+        <button id="addButton">Add Article</button>
+        <button id="deleteButton">Remove Selected Article</button>
+        <button id="changeFormatterButton">Change Formatter</button>
+        <footer>
+        	<p>Created by Andrei)</p>
+        </footer>
+   </body>   
+</html>
