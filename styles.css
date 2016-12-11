@@ -109,3 +109,8 @@ a:visited {
 .add-article-container {
   border: 1px groove;
 }
+
+.decoration {
+  height: 50px;
+  margin: auto;
+}

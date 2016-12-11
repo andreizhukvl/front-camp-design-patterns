@@ -3,6 +3,6 @@ class BackwardFormatterFactory {
   }
 
   create(articles) {
-    return new ArticlesBackwardFormatter(articles);
+    return new ArticlesBackwardFormatterDecorator(new ArticlesBackwardFormatter(articles));
   }
 }
